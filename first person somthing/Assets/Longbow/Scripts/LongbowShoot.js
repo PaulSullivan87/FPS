@@ -63,7 +63,7 @@ function Update () {
 		arrowSpawn.GetComponent(MeshRenderer).enabled = false;
 		
 		//Instantiated projectile (arrow)
-		var arrow = Instantiate(projectile, arrowSpawn.transform.position, transform.rotation);
+		var arrow = Instantiate(projectile, arrowSpawn.transform.position, transform.rotation);		
 		
 		//Add force to projectile, based off power
 		arrow.transform.GetComponent.<Rigidbody>().AddForce(transform.forward * power);
